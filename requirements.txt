@@ -1,7 +1,8 @@
 streamlit
+streamlit-webrtc
+av
 ultralytics
 opencv-python-headless
 tensorflow
 pandas
 numpy
-Pillow
