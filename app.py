@@ -14,7 +14,7 @@ st.markdown("Monitoring infrastructure for **potholes** and **trash**.")
 def load_models():
     # Update these paths to your actual .tflite or .pt files
     p_model = YOLO("models/best_int8.tflite", task="detect")
-    t_model = YOLO("models/yoloe-11l-seg_float16.tflite", task="detect")
+    t_model = YOLO("models/yolov8n-waste-12cls-best_int8.tflite", task="detect")
     return p_model, t_model
 
 p_model, t_model = load_models()
