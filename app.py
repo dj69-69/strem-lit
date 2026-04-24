@@ -15,8 +15,8 @@ st.title("🚧 RoadGuardian: Multi-Model AI Monitor")
 @st.cache_resource
 def load_models():
     # Ensure these paths match your folder structure exactly
-    p_model = YOLO("models/potholes.tflite", task="detect")
-    t_model = YOLO("models/trash.tflite", task="detect")
+    p_model = YOLO("models/best_int8.tflite", task="detect")
+    t_model = YOLO("models/.tflite", task="detect")
     return p_model, t_model
 
 p_model, t_model = load_models()
